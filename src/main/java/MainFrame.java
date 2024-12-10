@@ -419,8 +419,8 @@ public class MainFrame extends javax.swing.JFrame {
 
         ## 7. Contact and Support
         For assistance or inquiries, reach out to the project team:
-        - **Email**: support@calisapp.com
-        - **Phone**: +1-800-CALIS-HELP
+        - **Email**: (To be edited)
+        - **Phone**: (To be editted)
 
         Thank you for using CALIS! We hope it makes managing lockers easier and more efficient.
         """);
