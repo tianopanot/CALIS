@@ -298,7 +298,9 @@ public class MainFrame extends javax.swing.JFrame {
        ContentPanel.repaint();
        ContentPanel.revalidate();
 
-    }                                                   
+    }                                  
+    
+ 
 
     private void SpaceCheckerButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                   
     // Create a panel for space visualization
@@ -357,8 +359,9 @@ public class MainFrame extends javax.swing.JFrame {
        ContentPanel.add(HistoryPanel);
        ContentPanel.repaint();
        ContentPanel.revalidate();
-    }                                             
-
+    }     
+    
+    
     private void ManualButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
       ContentPanel.removeAll();
 
