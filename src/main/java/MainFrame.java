@@ -143,27 +143,30 @@ public class MainFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(42, 51, 53));
         setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 24)); // NOI18N
 
-        Sidebar.setBackground(new java.awt.Color(42, 51, 53));
+        Sidebar.setBackground(new java.awt.Color(152, 193, 217));
 
-        jLabel1.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 44)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("C.A.L.I.S.");
+        jLabel1.setFont(new java.awt.Font("Red Hat Text Medium", 0, 80)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("CALIS");
 
-        HomeButton.setBackground(new java.awt.Color(10, 94, 176));
+        HomeButton.setBackground(new java.awt.Color(152, 193, 217));
         HomeButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 0, 24)); // NOI18N
-        HomeButton.setForeground(new java.awt.Color(255, 255, 255));
-        HomeButton.setText("HOME");
-        HomeButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(10, 94, 176), 1, true));
+        HomeButton.setForeground(new java.awt.Color(0, 0, 0));
+        HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/HomeIcon.png"))); // NOI18N
+        HomeButton.setText("Home");
+        HomeButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         HomeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HomeButtonActionPerformed(evt);
             }
         });
 
-        LockerManagerButton.setBackground(new java.awt.Color(10, 94, 176));
+        LockerManagerButton.setBackground(new java.awt.Color(152, 193, 217));
         LockerManagerButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 0, 24)); // NOI18N
-        LockerManagerButton.setForeground(new java.awt.Color(255, 255, 255));
-        LockerManagerButton.setText("Locker Manager");
+        LockerManagerButton.setForeground(new java.awt.Color(0, 0, 0));
+        LockerManagerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Manager.png"))); // NOI18N
+        LockerManagerButton.setText("Lockers");
+        LockerManagerButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         LockerManagerButton.setDoubleBuffered(true);
         LockerManagerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,42 +174,50 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        SpaceCheckerButton.setBackground(new java.awt.Color(10, 94, 176));
+        SpaceCheckerButton.setBackground(new java.awt.Color(152, 193, 217));
         SpaceCheckerButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 0, 24)); // NOI18N
-        SpaceCheckerButton.setForeground(new java.awt.Color(255, 255, 255));
-        SpaceCheckerButton.setText("Space Checker");
+        SpaceCheckerButton.setForeground(new java.awt.Color(0, 0, 0));
+        SpaceCheckerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/SpaceChecker.png"))); // NOI18N
+        SpaceCheckerButton.setText("Space");
+        SpaceCheckerButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         SpaceCheckerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SpaceCheckerButtonActionPerformed(evt);
             }
         });
 
-        HistoryButton.setBackground(new java.awt.Color(10, 94, 176));
+        HistoryButton.setBackground(new java.awt.Color(152, 193, 217));
         HistoryButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 0, 24)); // NOI18N
-        HistoryButton.setForeground(new java.awt.Color(255, 255, 255));
-        HistoryButton.setText("History");
+        HistoryButton.setForeground(new java.awt.Color(0, 0, 0));
+        HistoryButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Logs.png"))); // NOI18N
+        HistoryButton.setText("Logs");
+        HistoryButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         HistoryButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HistoryButtonActionPerformed(evt);
             }
         });
 
-        ManualButton.setBackground(new java.awt.Color(10, 94, 176));
+        ManualButton.setBackground(new java.awt.Color(152, 193, 217));
         ManualButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 0, 24)); // NOI18N
-        ManualButton.setForeground(new java.awt.Color(255, 255, 255));
+        ManualButton.setForeground(new java.awt.Color(0, 0, 0));
+        ManualButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/ManualIcon.png"))); // NOI18N
         ManualButton.setText("Manual");
         ManualButton.setActionCommand("");
+        ManualButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ManualButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ManualButtonActionPerformed(evt);
             }
         });
 
-        AboutButton.setBackground(new java.awt.Color(10, 94, 176));
+        AboutButton.setBackground(new java.awt.Color(152, 193, 217));
         AboutButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 0, 24)); // NOI18N
-        AboutButton.setForeground(new java.awt.Color(255, 255, 255));
+        AboutButton.setForeground(new java.awt.Color(0, 0, 0));
+        AboutButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/AboutIcon.png"))); // NOI18N
         AboutButton.setText("About");
         AboutButton.setActionCommand("");
+        AboutButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         AboutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AboutButtonActionPerformed(evt);
@@ -217,23 +228,28 @@ public class MainFrame extends javax.swing.JFrame {
         Sidebar.setLayout(SidebarLayout);
         SidebarLayout.setHorizontalGroup(
             SidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(HomeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(LockerManagerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(SpaceCheckerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(HistoryButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(ManualButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(AboutButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SidebarLayout.createSequentialGroup()
-                .addContainerGap(28, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(22, 22, 22))
+            .addGroup(SidebarLayout.createSequentialGroup()
+                .addGroup(SidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SidebarLayout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(jLabel1))
+                    .addGroup(SidebarLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(SidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(LockerManagerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(HomeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SpaceCheckerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(HistoryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ManualButton, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AboutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         SidebarLayout.setVerticalGroup(
             SidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SidebarLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(48, 48, 48)
                 .addComponent(jLabel1)
-                .addGap(64, 64, 64)
+                .addGap(18, 18, 18)
                 .addComponent(HomeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(LockerManagerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -259,7 +275,7 @@ public class MainFrame extends javax.swing.JFrame {
         HomePanel.setLayout(HomePanelLayout);
         HomePanelLayout.setHorizontalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1094, Short.MAX_VALUE)
+            .addGap(0, 1082, Short.MAX_VALUE)
         );
         HomePanelLayout.setVerticalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -268,22 +284,24 @@ public class MainFrame extends javax.swing.JFrame {
 
         ContentPanel.add(HomePanel, "card2");
 
-        LockerManagerPanel.setBackground(new java.awt.Color(255, 255, 255));
+        LockerManagerPanel.setBackground(new java.awt.Color(61, 90, 128));
 
         Lockers.setMaximumSize(new java.awt.Dimension(650, 650));
         Lockers.setPreferredSize(new java.awt.Dimension(650, 650));
         Lockers.setLayout(new java.awt.CardLayout());
 
-        FloorA.setBackground(new java.awt.Color(42, 51, 53));
+        FloorA.setBackground(new java.awt.Color(41, 50, 65));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(224, 251, 252));
         jLabel2.setText("Floor A");
 
-        A1.setBackground(new java.awt.Color(54, 143, 139));
+        A1.setBackground(new java.awt.Color(152, 193, 217));
         A1.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A1.setForeground(new java.awt.Color(0, 0, 0));
         A1.setText("A1");
+        A1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A1.setPreferredSize(new java.awt.Dimension(100, 100));
         A1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -291,9 +309,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A3.setBackground(new java.awt.Color(54, 143, 139));
+        A3.setBackground(new java.awt.Color(152, 193, 217));
         A3.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A3.setForeground(new java.awt.Color(0, 0, 0));
         A3.setText("A3");
+        A3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A3.setPreferredSize(new java.awt.Dimension(100, 100));
         A3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -301,8 +321,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A2.setBackground(new java.awt.Color(54, 143, 139));
+        A2.setBackground(new java.awt.Color(152, 193, 217));
         A2.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A2.setForeground(new java.awt.Color(0, 0, 0));
+        A2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A2.setLabel("A2");
         A2.setPreferredSize(new java.awt.Dimension(100, 100));
         A2.addActionListener(new java.awt.event.ActionListener() {
@@ -311,9 +333,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A4.setBackground(new java.awt.Color(54, 143, 139));
+        A4.setBackground(new java.awt.Color(152, 193, 217));
         A4.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A4.setForeground(new java.awt.Color(0, 0, 0));
         A4.setText("A4");
+        A4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A4.setPreferredSize(new java.awt.Dimension(100, 100));
         A4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -321,9 +345,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A5.setBackground(new java.awt.Color(54, 143, 139));
+        A5.setBackground(new java.awt.Color(152, 193, 217));
         A5.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A5.setForeground(new java.awt.Color(0, 0, 0));
         A5.setText("A5");
+        A5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A5.setPreferredSize(new java.awt.Dimension(100, 100));
         A5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -331,9 +357,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A6.setBackground(new java.awt.Color(54, 143, 139));
+        A6.setBackground(new java.awt.Color(152, 193, 217));
         A6.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A6.setForeground(new java.awt.Color(0, 0, 0));
         A6.setText("A6");
+        A6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A6.setPreferredSize(new java.awt.Dimension(100, 100));
         A6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -341,9 +369,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A7.setBackground(new java.awt.Color(54, 143, 139));
+        A7.setBackground(new java.awt.Color(152, 193, 217));
         A7.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A7.setForeground(new java.awt.Color(0, 0, 0));
         A7.setText("A7");
+        A7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A7.setPreferredSize(new java.awt.Dimension(100, 100));
         A7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -351,9 +381,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A8.setBackground(new java.awt.Color(54, 143, 139));
+        A8.setBackground(new java.awt.Color(152, 193, 217));
         A8.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A8.setForeground(new java.awt.Color(0, 0, 0));
         A8.setText("A8");
+        A8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A8.setPreferredSize(new java.awt.Dimension(100, 100));
         A8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -361,9 +393,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A9.setBackground(new java.awt.Color(54, 143, 139));
+        A9.setBackground(new java.awt.Color(152, 193, 217));
         A9.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A9.setForeground(new java.awt.Color(0, 0, 0));
         A9.setText("A9");
+        A9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A9.setPreferredSize(new java.awt.Dimension(100, 100));
         A9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -371,9 +405,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A10.setBackground(new java.awt.Color(54, 143, 139));
+        A10.setBackground(new java.awt.Color(152, 193, 217));
         A10.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A10.setForeground(new java.awt.Color(0, 0, 0));
         A10.setText("A10");
+        A10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A10.setPreferredSize(new java.awt.Dimension(100, 100));
         A10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -381,9 +417,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A11.setBackground(new java.awt.Color(54, 143, 139));
+        A11.setBackground(new java.awt.Color(152, 193, 217));
         A11.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A11.setForeground(new java.awt.Color(0, 0, 0));
         A11.setText("A11");
+        A11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A11.setPreferredSize(new java.awt.Dimension(100, 100));
         A11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -391,9 +429,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A12.setBackground(new java.awt.Color(54, 143, 139));
+        A12.setBackground(new java.awt.Color(152, 193, 217));
         A12.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A12.setForeground(new java.awt.Color(0, 0, 0));
         A12.setText("A14");
+        A12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A12.setPreferredSize(new java.awt.Dimension(100, 100));
         A12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -401,9 +441,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A13.setBackground(new java.awt.Color(54, 143, 139));
+        A13.setBackground(new java.awt.Color(152, 193, 217));
         A13.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A13.setForeground(new java.awt.Color(0, 0, 0));
         A13.setText("A12");
+        A13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A13.setPreferredSize(new java.awt.Dimension(100, 100));
         A13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -411,9 +453,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A14.setBackground(new java.awt.Color(54, 143, 139));
+        A14.setBackground(new java.awt.Color(152, 193, 217));
         A14.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A14.setForeground(new java.awt.Color(0, 0, 0));
         A14.setText("A15");
+        A14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A14.setPreferredSize(new java.awt.Dimension(100, 100));
         A14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -421,9 +465,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A15.setBackground(new java.awt.Color(54, 143, 139));
+        A15.setBackground(new java.awt.Color(152, 193, 217));
         A15.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A15.setForeground(new java.awt.Color(0, 0, 0));
         A15.setText("A13");
+        A15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A15.setPreferredSize(new java.awt.Dimension(100, 100));
         A15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -431,9 +477,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A16.setBackground(new java.awt.Color(54, 143, 139));
+        A16.setBackground(new java.awt.Color(152, 193, 217));
         A16.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A16.setForeground(new java.awt.Color(0, 0, 0));
         A16.setText("A18");
+        A16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A16.setPreferredSize(new java.awt.Dimension(100, 100));
         A16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -441,9 +489,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A17.setBackground(new java.awt.Color(54, 143, 139));
+        A17.setBackground(new java.awt.Color(152, 193, 217));
         A17.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A17.setForeground(new java.awt.Color(0, 0, 0));
         A17.setText("A17");
+        A17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A17.setPreferredSize(new java.awt.Dimension(100, 100));
         A17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -451,9 +501,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A18.setBackground(new java.awt.Color(54, 143, 139));
+        A18.setBackground(new java.awt.Color(152, 193, 217));
         A18.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A18.setForeground(new java.awt.Color(0, 0, 0));
         A18.setText("A19");
+        A18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A18.setPreferredSize(new java.awt.Dimension(100, 100));
         A18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -461,9 +513,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A19.setBackground(new java.awt.Color(54, 143, 139));
+        A19.setBackground(new java.awt.Color(152, 193, 217));
         A19.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A19.setForeground(new java.awt.Color(0, 0, 0));
         A19.setText("A20");
+        A19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A19.setPreferredSize(new java.awt.Dimension(100, 100));
         A19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -471,9 +525,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A20.setBackground(new java.awt.Color(54, 143, 139));
+        A20.setBackground(new java.awt.Color(152, 193, 217));
         A20.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A20.setForeground(new java.awt.Color(0, 0, 0));
         A20.setText("A16");
+        A20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A20.setPreferredSize(new java.awt.Dimension(100, 100));
         A20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -481,9 +537,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A21.setBackground(new java.awt.Color(54, 143, 139));
+        A21.setBackground(new java.awt.Color(152, 193, 217));
         A21.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A21.setForeground(new java.awt.Color(0, 0, 0));
         A21.setText("A22");
+        A21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A21.setPreferredSize(new java.awt.Dimension(100, 100));
         A21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -491,9 +549,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A22.setBackground(new java.awt.Color(54, 143, 139));
+        A22.setBackground(new java.awt.Color(152, 193, 217));
         A22.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A22.setForeground(new java.awt.Color(0, 0, 0));
         A22.setText("A25");
+        A22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A22.setPreferredSize(new java.awt.Dimension(100, 100));
         A22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -501,9 +561,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A23.setBackground(new java.awt.Color(54, 143, 139));
+        A23.setBackground(new java.awt.Color(152, 193, 217));
         A23.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A23.setForeground(new java.awt.Color(0, 0, 0));
         A23.setText("A21");
+        A23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A23.setPreferredSize(new java.awt.Dimension(100, 100));
         A23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -511,9 +573,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A24.setBackground(new java.awt.Color(54, 143, 139));
+        A24.setBackground(new java.awt.Color(152, 193, 217));
         A24.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A24.setForeground(new java.awt.Color(0, 0, 0));
         A24.setText("A24");
+        A24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A24.setPreferredSize(new java.awt.Dimension(100, 100));
         A24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -521,9 +585,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        A25.setBackground(new java.awt.Color(54, 143, 139));
+        A25.setBackground(new java.awt.Color(152, 193, 217));
         A25.setFont(new java.awt.Font("JetBrainsMono NFP Medium", 0, 36)); // NOI18N
+        A25.setForeground(new java.awt.Color(0, 0, 0));
         A25.setText("A23");
+        A25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         A25.setPreferredSize(new java.awt.Dimension(100, 100));
         A25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -599,46 +665,51 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(FloorALayout.createSequentialGroup()
                 .addComponent(jLabel2)
                 .addGap(12, 12, 12)
-                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
         Lockers.add(FloorA, "card2");
 
-        FloorB.setBackground(new java.awt.Color(42, 51, 53));
+        FloorB.setBackground(new java.awt.Color(41, 50, 65));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 36)); // NOI18N
@@ -963,46 +1034,51 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(FloorBLayout.createSequentialGroup()
                 .addComponent(jLabel3)
                 .addGap(12, 12, 12)
-                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
         Lockers.add(FloorB, "card3");
 
-        FloorC.setBackground(new java.awt.Color(42, 51, 53));
+        FloorC.setBackground(new java.awt.Color(41, 50, 65));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 36)); // NOI18N
@@ -1327,46 +1403,51 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(FloorCLayout.createSequentialGroup()
                 .addComponent(jLabel4)
                 .addGap(12, 12, 12)
-                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(A71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(A75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FloorCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(A73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(A75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
         Lockers.add(FloorC, "card4");
 
-        FloorD.setBackground(new java.awt.Color(42, 51, 53));
+        FloorD.setBackground(new java.awt.Color(41, 50, 65));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 36)); // NOI18N
@@ -1392,7 +1473,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         Lockers.add(FloorD, "card5");
 
-        FloorE.setBackground(new java.awt.Color(42, 51, 53));
+        FloorE.setBackground(new java.awt.Color(41, 50, 65));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 36)); // NOI18N
@@ -1418,20 +1499,22 @@ public class MainFrame extends javax.swing.JFrame {
 
         Lockers.add(FloorE, "card6");
 
-        BackButton.setBackground(new java.awt.Color(115, 147, 126));
+        BackButton.setBackground(new java.awt.Color(61, 90, 128));
         BackButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 1, 30)); // NOI18N
-        BackButton.setForeground(new java.awt.Color(255, 255, 255));
+        BackButton.setForeground(new java.awt.Color(0, 0, 0));
         BackButton.setText("PREV");
+        BackButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(61, 90, 128)));
         BackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BackButtonActionPerformed(evt);
             }
         });
 
-        NextButton.setBackground(new java.awt.Color(115, 147, 126));
+        NextButton.setBackground(new java.awt.Color(61, 90, 128));
         NextButton.setFont(new java.awt.Font("JetBrainsMono NFM Medium", 1, 30)); // NOI18N
-        NextButton.setForeground(new java.awt.Color(255, 255, 255));
+        NextButton.setForeground(new java.awt.Color(0, 0, 0));
         NextButton.setText("NEXT");
+        NextButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(61, 90, 128)));
         NextButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NextButtonActionPerformed(evt);
@@ -1443,7 +1526,7 @@ public class MainFrame extends javax.swing.JFrame {
         LockerManagerPanelLayout.setHorizontalGroup(
             LockerManagerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LockerManagerPanelLayout.createSequentialGroup()
-                .addContainerGap(84, Short.MAX_VALUE)
+                .addContainerGap(72, Short.MAX_VALUE)
                 .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Lockers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1475,7 +1558,7 @@ public class MainFrame extends javax.swing.JFrame {
         SpaceCheckerPanel.setLayout(SpaceCheckerPanelLayout);
         SpaceCheckerPanelLayout.setHorizontalGroup(
             SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1094, Short.MAX_VALUE)
+            .addGap(0, 1082, Short.MAX_VALUE)
         );
         SpaceCheckerPanelLayout.setVerticalGroup(
             SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1490,7 +1573,7 @@ public class MainFrame extends javax.swing.JFrame {
         HistoryPanel.setLayout(HistoryPanelLayout);
         HistoryPanelLayout.setHorizontalGroup(
             HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1094, Short.MAX_VALUE)
+            .addGap(0, 1082, Short.MAX_VALUE)
         );
         HistoryPanelLayout.setVerticalGroup(
             HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1505,7 +1588,7 @@ public class MainFrame extends javax.swing.JFrame {
         ManualPanel.setLayout(ManualPanelLayout);
         ManualPanelLayout.setHorizontalGroup(
             ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1094, Short.MAX_VALUE)
+            .addGap(0, 1082, Short.MAX_VALUE)
         );
         ManualPanelLayout.setVerticalGroup(
             ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1520,7 +1603,7 @@ public class MainFrame extends javax.swing.JFrame {
         AboutPanel.setLayout(AboutPanelLayout);
         AboutPanelLayout.setHorizontalGroup(
             AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1094, Short.MAX_VALUE)
+            .addGap(0, 1082, Short.MAX_VALUE)
         );
         AboutPanelLayout.setVerticalGroup(
             AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
