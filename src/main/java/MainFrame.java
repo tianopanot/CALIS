@@ -192,6 +192,9 @@ public class MainFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(42, 51, 53));
         setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 24)); // NOI18N
+        setMaximumSize(new java.awt.Dimension(1050, 750));
+        setMinimumSize(new java.awt.Dimension(1050, 750));
+        setPreferredSize(new java.awt.Dimension(1050, 750));
 
         Sidebar.setBackground(new java.awt.Color(152, 193, 217));
         Sidebar.setMaximumSize(new java.awt.Dimension(350, 650));
@@ -331,7 +334,7 @@ public class MainFrame extends javax.swing.JFrame {
         HomePanel.setLayout(HomePanelLayout);
         HomePanelLayout.setHorizontalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGap(0, 1025, Short.MAX_VALUE)
         );
         HomePanelLayout.setVerticalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2405,7 +2408,7 @@ public class MainFrame extends javax.swing.JFrame {
         SpaceCheckerPanel.setLayout(SpaceCheckerPanelLayout);
         SpaceCheckerPanelLayout.setHorizontalGroup(
             SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGap(0, 1025, Short.MAX_VALUE)
         );
         SpaceCheckerPanelLayout.setVerticalGroup(
             SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2420,7 +2423,7 @@ public class MainFrame extends javax.swing.JFrame {
         HistoryPanel.setLayout(HistoryPanelLayout);
         HistoryPanelLayout.setHorizontalGroup(
             HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGap(0, 1025, Short.MAX_VALUE)
         );
         HistoryPanelLayout.setVerticalGroup(
             HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2435,7 +2438,7 @@ public class MainFrame extends javax.swing.JFrame {
         ManualPanel.setLayout(ManualPanelLayout);
         ManualPanelLayout.setHorizontalGroup(
             ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGap(0, 1025, Short.MAX_VALUE)
         );
         ManualPanelLayout.setVerticalGroup(
             ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2450,7 +2453,7 @@ public class MainFrame extends javax.swing.JFrame {
         AboutPanel.setLayout(AboutPanelLayout);
         AboutPanelLayout.setHorizontalGroup(
             AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGap(0, 1025, Short.MAX_VALUE)
         );
         AboutPanelLayout.setVerticalGroup(
             AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2466,12 +2469,13 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Sidebar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(ContentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1025, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Sidebar, javax.swing.GroupLayout.DEFAULT_SIZE, 750, Short.MAX_VALUE)
-            .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(ContentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
