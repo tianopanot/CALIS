@@ -323,8 +323,6 @@ public class MainFrame extends javax.swing.JFrame {
         HomeButton.getAccessibleContext().setAccessibleDescription("");
 
         ContentPanel.setBackground(new java.awt.Color(42, 51, 53));
-        ContentPanel.setMaximumSize(new java.awt.Dimension(1050, 750));
-        ContentPanel.setMinimumSize(new java.awt.Dimension(1050, 750));
         ContentPanel.setPreferredSize(new java.awt.Dimension(1050, 750));
         ContentPanel.setLayout(new java.awt.CardLayout());
 
@@ -334,7 +332,7 @@ public class MainFrame extends javax.swing.JFrame {
         HomePanel.setLayout(HomePanelLayout);
         HomePanelLayout.setHorizontalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1025, Short.MAX_VALUE)
+            .addGap(0, 1050, Short.MAX_VALUE)
         );
         HomePanelLayout.setVerticalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -344,10 +342,7 @@ public class MainFrame extends javax.swing.JFrame {
         ContentPanel.add(HomePanel, "card2");
 
         LockerManagerPanel.setBackground(new java.awt.Color(61, 90, 128));
-        LockerManagerPanel.setMaximumSize(new java.awt.Dimension(1082, 727));
-        LockerManagerPanel.setMinimumSize(new java.awt.Dimension(1082, 727));
 
-        Lockers.setMaximumSize(new java.awt.Dimension(650, 650));
         Lockers.setMinimumSize(new java.awt.Dimension(650, 650));
         Lockers.setPreferredSize(new java.awt.Dimension(650, 650));
         Lockers.setLayout(new java.awt.CardLayout());
@@ -2408,7 +2403,7 @@ public class MainFrame extends javax.swing.JFrame {
         SpaceCheckerPanel.setLayout(SpaceCheckerPanelLayout);
         SpaceCheckerPanelLayout.setHorizontalGroup(
             SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1025, Short.MAX_VALUE)
+            .addGap(0, 1050, Short.MAX_VALUE)
         );
         SpaceCheckerPanelLayout.setVerticalGroup(
             SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2423,7 +2418,7 @@ public class MainFrame extends javax.swing.JFrame {
         HistoryPanel.setLayout(HistoryPanelLayout);
         HistoryPanelLayout.setHorizontalGroup(
             HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1025, Short.MAX_VALUE)
+            .addGap(0, 1050, Short.MAX_VALUE)
         );
         HistoryPanelLayout.setVerticalGroup(
             HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2438,7 +2433,7 @@ public class MainFrame extends javax.swing.JFrame {
         ManualPanel.setLayout(ManualPanelLayout);
         ManualPanelLayout.setHorizontalGroup(
             ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1025, Short.MAX_VALUE)
+            .addGap(0, 1050, Short.MAX_VALUE)
         );
         ManualPanelLayout.setVerticalGroup(
             ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2453,7 +2448,7 @@ public class MainFrame extends javax.swing.JFrame {
         AboutPanel.setLayout(AboutPanelLayout);
         AboutPanelLayout.setHorizontalGroup(
             AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1025, Short.MAX_VALUE)
+            .addGap(0, 1050, Short.MAX_VALUE)
         );
         AboutPanelLayout.setVerticalGroup(
             AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2469,13 +2464,13 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Sidebar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ContentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1025, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Sidebar, javax.swing.GroupLayout.DEFAULT_SIZE, 750, Short.MAX_VALUE)
-            .addComponent(ContentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
