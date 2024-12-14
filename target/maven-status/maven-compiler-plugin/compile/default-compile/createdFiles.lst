@@ -13,10 +13,12 @@ MainFrame$32.class
 MainFrame$47.class
 MainFrame$87.class
 MainFrame$95.class
+RandomKeyGenerator.class
 MainFrame$72.class
 MainFrame$75.class
 MainFrame$27.class
 MainFrame$111.class
+Locker.class
 MainFrame$52.class
 MainFrame$92.class
 MainFrame$12.class
@@ -32,6 +34,7 @@ MainFrame$132.class
 MainFrame$122.class
 MainFrame$51.class
 MainFrame$61.class
+Items.class
 MainFrame$129.class
 MainFrame$21.class
 MainFrame$11.class
