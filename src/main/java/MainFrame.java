@@ -1,16 +1,24 @@
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.BorderFactory;
 
 //The main GUI frame
 public class MainFrame extends javax.swing.JFrame {
@@ -45,6 +53,10 @@ public class MainFrame extends javax.swing.JFrame {
         AboutButton = new javax.swing.JButton();
         ContentPanel = new javax.swing.JPanel();
         HomePanel = new javax.swing.JPanel();
+        SpaceCheckerPanel = new javax.swing.JPanel();
+        HistoryPanel = new javax.swing.JPanel();
+        ManualPanel = new javax.swing.JPanel();
+        AboutPanel = new javax.swing.JPanel();
         LockerManagerPanel = new javax.swing.JPanel();
         Lockers = new javax.swing.JPanel();
         FloorA = new javax.swing.JPanel();
@@ -184,13 +196,9 @@ public class MainFrame extends javax.swing.JFrame {
         A125 = new javax.swing.JButton();
         BackButton = new javax.swing.JButton();
         NextButton = new javax.swing.JButton();
-        SpaceCheckerPanel = new javax.swing.JPanel();
-        HistoryPanel = new javax.swing.JPanel();
-        ManualPanel = new javax.swing.JPanel();
-        AboutPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(42, 51, 53));
+        setBackground(new java.awt.Color(61, 90, 128));
         setFont(new java.awt.Font("JetBrainsMono NF Medium", 0, 24)); // NOI18N
         setMaximumSize(new java.awt.Dimension(1050, 750));
         setMinimumSize(new java.awt.Dimension(1050, 750));
@@ -322,8 +330,8 @@ public class MainFrame extends javax.swing.JFrame {
 
         HomeButton.getAccessibleContext().setAccessibleDescription("");
 
-        ContentPanel.setBackground(new java.awt.Color(42, 51, 53));
-        ContentPanel.setPreferredSize(new java.awt.Dimension(1050, 750));
+        ContentPanel.setBackground(new java.awt.Color(61, 90, 128));
+        ContentPanel.setPreferredSize(new java.awt.Dimension(1050, 800));
         ContentPanel.setLayout(new java.awt.CardLayout());
 
         HomePanel.setBackground(new java.awt.Color(51, 255, 255));
@@ -332,7 +340,7 @@ public class MainFrame extends javax.swing.JFrame {
         HomePanel.setLayout(HomePanelLayout);
         HomePanelLayout.setHorizontalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
+            .addGap(0, 1016, Short.MAX_VALUE)
         );
         HomePanelLayout.setVerticalGroup(
             HomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -341,7 +349,68 @@ public class MainFrame extends javax.swing.JFrame {
 
         ContentPanel.add(HomePanel, "card2");
 
+        SpaceCheckerPanel.setBackground(new java.awt.Color(255, 0, 255));
+
+        javax.swing.GroupLayout SpaceCheckerPanelLayout = new javax.swing.GroupLayout(SpaceCheckerPanel);
+        SpaceCheckerPanel.setLayout(SpaceCheckerPanelLayout);
+        SpaceCheckerPanelLayout.setHorizontalGroup(
+            SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1016, Short.MAX_VALUE)
+        );
+        SpaceCheckerPanelLayout.setVerticalGroup(
+            SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+
+        ContentPanel.add(SpaceCheckerPanel, "card4");
+
+        HistoryPanel.setBackground(new java.awt.Color(255, 0, 51));
+
+        javax.swing.GroupLayout HistoryPanelLayout = new javax.swing.GroupLayout(HistoryPanel);
+        HistoryPanel.setLayout(HistoryPanelLayout);
+        HistoryPanelLayout.setHorizontalGroup(
+            HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1016, Short.MAX_VALUE)
+        );
+        HistoryPanelLayout.setVerticalGroup(
+            HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+
+        ContentPanel.add(HistoryPanel, "card5");
+
+        ManualPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout ManualPanelLayout = new javax.swing.GroupLayout(ManualPanel);
+        ManualPanel.setLayout(ManualPanelLayout);
+        ManualPanelLayout.setHorizontalGroup(
+            ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1016, Short.MAX_VALUE)
+        );
+        ManualPanelLayout.setVerticalGroup(
+            ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+
+        ContentPanel.add(ManualPanel, "card6");
+
+        AboutPanel.setBackground(new java.awt.Color(0, 255, 102));
+
+        javax.swing.GroupLayout AboutPanelLayout = new javax.swing.GroupLayout(AboutPanel);
+        AboutPanel.setLayout(AboutPanelLayout);
+        AboutPanelLayout.setHorizontalGroup(
+            AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1016, Short.MAX_VALUE)
+        );
+        AboutPanelLayout.setVerticalGroup(
+            AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 750, Short.MAX_VALUE)
+        );
+
+        ContentPanel.add(AboutPanel, "card7");
+
         LockerManagerPanel.setBackground(new java.awt.Color(61, 90, 128));
+        LockerManagerPanel.setForeground(new java.awt.Color(61, 90, 128));
 
         Lockers.setMinimumSize(new java.awt.Dimension(650, 650));
         Lockers.setPreferredSize(new java.awt.Dimension(650, 650));
@@ -2397,66 +2466,6 @@ public class MainFrame extends javax.swing.JFrame {
 
         ContentPanel.add(LockerManagerPanel, "card3");
 
-        SpaceCheckerPanel.setBackground(new java.awt.Color(255, 0, 255));
-
-        javax.swing.GroupLayout SpaceCheckerPanelLayout = new javax.swing.GroupLayout(SpaceCheckerPanel);
-        SpaceCheckerPanel.setLayout(SpaceCheckerPanelLayout);
-        SpaceCheckerPanelLayout.setHorizontalGroup(
-            SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
-        );
-        SpaceCheckerPanelLayout.setVerticalGroup(
-            SpaceCheckerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-
-        ContentPanel.add(SpaceCheckerPanel, "card4");
-
-        HistoryPanel.setBackground(new java.awt.Color(255, 0, 51));
-
-        javax.swing.GroupLayout HistoryPanelLayout = new javax.swing.GroupLayout(HistoryPanel);
-        HistoryPanel.setLayout(HistoryPanelLayout);
-        HistoryPanelLayout.setHorizontalGroup(
-            HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
-        );
-        HistoryPanelLayout.setVerticalGroup(
-            HistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-
-        ContentPanel.add(HistoryPanel, "card5");
-
-        ManualPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout ManualPanelLayout = new javax.swing.GroupLayout(ManualPanel);
-        ManualPanel.setLayout(ManualPanelLayout);
-        ManualPanelLayout.setHorizontalGroup(
-            ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
-        );
-        ManualPanelLayout.setVerticalGroup(
-            ManualPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-
-        ContentPanel.add(ManualPanel, "card6");
-
-        AboutPanel.setBackground(new java.awt.Color(0, 255, 102));
-
-        javax.swing.GroupLayout AboutPanelLayout = new javax.swing.GroupLayout(AboutPanel);
-        AboutPanel.setLayout(AboutPanelLayout);
-        AboutPanelLayout.setHorizontalGroup(
-            AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
-        );
-        AboutPanelLayout.setVerticalGroup(
-            AboutPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-
-        ContentPanel.add(AboutPanel, "card7");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -2464,13 +2473,13 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Sidebar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Sidebar, javax.swing.GroupLayout.DEFAULT_SIZE, 750, Short.MAX_VALUE)
-            .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(ContentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -2496,10 +2505,85 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_LockerManagerButtonActionPerformed
 
     private void SpaceCheckerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SpaceCheckerButtonActionPerformed
-        ContentPanel.removeAll();
-       ContentPanel.add(SpaceCheckerPanel);
-       ContentPanel.repaint();
-       ContentPanel.revalidate();
+        // Define the loc array (5 floors, 5 rows, 5 columns)
+        String[][][] loc = new String[5][5][5]; //String as of now but must be changed to locker
+        // Create a panel for space visualization
+        JPanel spaceCheckerPanel = new JPanel(new BorderLayout());
+        spaceCheckerPanel.setBackground(new Color(61, 90, 128));
+
+        // Title label for the space checker
+        JLabel titleLabel = new JLabel("Locker Availability", SwingConstants.CENTER);
+        titleLabel.setFont(new Font("Jettbrains Mono Medium", Font.BOLD, 35)); // Larger title
+        titleLabel.setForeground(new Color(152, 193, 217));
+        spaceCheckerPanel.add(titleLabel, BorderLayout.NORTH);
+        
+        
+
+        // Panel to hold grids for each floor
+        JPanel floorsPanel = new JPanel();
+        floorsPanel.setLayout(new BoxLayout(floorsPanel, BoxLayout.Y_AXIS));
+        floorsPanel.setBackground(new Color(61, 90, 128));
+        floorsPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10)); // Add margin for the panel
+        
+        for (int i = 0; i < 5; i++) {
+            // Create a panel for each floor
+            JPanel floorPanel = new JPanel(new GridLayout(5, 5, 10, 10)); // 5x5 grid with equal gaps
+            floorPanel.setBackground(new Color(41, 50, 65)); // Set background color for the floor panel
+
+            JLabel floorLabel = new JLabel("FLOOR " + (char) ('A' + i), SwingConstants.CENTER);
+            floorLabel.setFont(new Font("Jettbrains Mono Medium", Font.BOLD, 20)); // Larger floor label
+            floorLabel.setForeground(new Color(152, 193, 217)); // Distinct color for visibility
+
+            JPanel floorLabelWrapper = new JPanel();
+            floorLabelWrapper.setLayout(new BorderLayout());
+            floorLabelWrapper.setBackground(new Color(61, 90, 128)); // Match background color with parent panel
+            floorLabelWrapper.add(floorLabel, BorderLayout.CENTER);
+            floorLabelWrapper.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 0, 10, 0));
+
+            for (int j = 0; j < 5; j++) {
+                for (int k = 0; k < 5; k++) {
+                    // Check if locker is available or occupied
+                    int lockerNumber = j * 5 + k + 1;
+                    String lockerContent = String.valueOf(lockerNumber);
+
+                    // Create a label for the locker
+                    JLabel lockerLabel = new JLabel(lockerContent, SwingConstants.CENTER);
+                    lockerLabel.setFont(new Font("Jettbrains Mono Medium", Font.BOLD, 16)); // Slightly larger font
+                    lockerLabel.setOpaque(true);
+                    lockerLabel.setBackground(loc[i][j][k] == null ? new Color(152, 193, 217) : new Color(247, 164, 164));
+                    lockerLabel.setForeground(Color.BLACK);
+                    lockerLabel.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK, 0));
+                    lockerLabel.setPreferredSize(new java.awt.Dimension(50, 50)); // Ensure square lockers
+
+                    // Add label to the floor panel
+                    floorPanel.add(lockerLabel);
+                }
+            }
+
+            // Add spacing between floors
+            JPanel floorWrapper = new JPanel();
+            floorWrapper.setBackground(new Color(61, 90, 128));
+            floorWrapper.setLayout(new BorderLayout());
+            floorWrapper.add(floorLabelWrapper, BorderLayout.NORTH);
+            floorWrapper.add(floorPanel, BorderLayout.CENTER);
+            floorWrapper.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 0, 20, 0)); // Add space between floors
+            floorsPanel.add(floorWrapper);
+        }
+
+        // Add floors panel to a scrollable pane
+        JScrollPane scrollPane = new JScrollPane(floorsPanel);
+        scrollPane.setPreferredSize(new java.awt.Dimension(1050, 800)); 
+        spaceCheckerPanel.add(scrollPane, BorderLayout.CENTER);
+
+        // Display the panel (update ContentPanel on EDT)
+        SwingUtilities.invokeLater(() -> {
+            ContentPanel.removeAll();
+            ContentPanel.add(spaceCheckerPanel);
+            ContentPanel.repaint();
+            ContentPanel.revalidate();
+        });
+
+
     }//GEN-LAST:event_SpaceCheckerButtonActionPerformed
 
     private void HistoryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistoryButtonActionPerformed
@@ -2510,146 +2594,124 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_HistoryButtonActionPerformed
 
     private void ManualButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManualButtonActionPerformed
-      ContentPanel.removeAll();
+         ContentPanel.removeAll();
 
-    // Create a new panel to display the manual
-    JPanel manualPanel = new JPanel(new BorderLayout());
+        manualGui manualScreen = new manualGui();//instance of the class that contains the panel
+        JPanel Manual = manualScreen.createMainPanel(); // Use the combined main panel
 
-    // Title label for the manual
-    JLabel titleLabel = new JLabel("C.A.L.I.S. User Manual", SwingConstants.CENTER);
-    titleLabel.setFont(new Font("SansSerif", Font.BOLD, 24));
-    manualPanel.add(titleLabel, BorderLayout.NORTH);
+        // Add the mainPanel to ContentPanel
+        ContentPanel.add(Manual, BorderLayout.CENTER);
 
-    // Text area for the manual content
-    JTextArea manualText = new JTextArea();
-    manualText.setEditable(false);
-    manualText.setLineWrap(true);
-    manualText.setWrapStyleWord(true);
-    manualText.setFont(new Font("SansSerif", Font.PLAIN, 14));
-
-    // Add the manual content
-    manualText.setText("""
-        # CALIS (Content Analyzer and Locker Inventory System) User Manual
-
-        ## Table of Contents
-        1. Introduction
-        2. System Requirements
-        3. Installation and Setup
-        4. Getting Started
-        5. Features and Usage Instructions
-           - Home
-           - Locker Manager
-           - Space Checker
-           - History
-           - Manual
-           - About
-        6. Troubleshooting
-        7. Contact and Support
-
-        ---
-
-        ## 1. Introduction
-        Welcome to CALIS, the Content Analyzer and Locker Inventory System. This application is designed to help administrators of facilities with lockers to efficiently store, organize, and manage items. Whether you manage lockers in schools, businesses, or other establishments, CALIS simplifies the process of tracking contents and optimizing locker usage.
-
-        ---
-
-        ## 2. System Requirements
-        - **Operating System**: Compatible with Windows, macOS, and Linux
-        - **Java Version**: Ensure Java Runtime Environment (JRE) is installed (version 8 or above recommended)
-        - **Storage**: Minimum of 50MB free space
-        - **RAM**: 2GB or more recommended
-
-        ---
-
-        ## 3. Installation and Setup
-        1. Download the standalone JAR file from the provided link or source.
-        2. Ensure that Java is installed on your system.
-        3. Double-click the JAR file to launch the application.
-        4. If the JAR file doesn’t open, use the terminal or command prompt to run the command:
-           ```
-           java -jar calis.jar
-           ```
-
-        ---
-
-        ## 4. Getting Started
-        Upon launching CALIS, you will be greeted with the main window, which consists of:
-        - **Left Sidebar**: Contains navigation buttons for various features (Home, Locker Manager, etc.)
-        - **Main Panel**: Displays the corresponding content for the selected feature.
-
-        ### Navigation Tips
-        - Click on the buttons in the left sidebar to access specific functionalities.
-        - Use the "Manual" button for quick help within the app.
-
-        ---
-
-        ## 5. Features and Usage Instructions
-        ### 5.1 Home
-        The Home screen provides an overview and access to all primary features. Use this screen as the starting point for navigation.
-
-        ### 5.2 Locker Manager
-        Manage the lockers effectively:
-        - **View Locker Contents**: Select a locker to see its stored items.
-        - **Add Item**: Choose a locker and input the item details to store it.
-        - **Remove Item**: Select an item from the locker to remove it.
-        - **Move Item Between Lockers**: Relocate items by specifying source and destination lockers.
-
-        ### 5.3 Space Checker
-        Check the availability of space in each locker:
-        - Displays the total and used capacity.
-        - Helps optimize storage.
-
-        ### 5.4 History
-        View a log of all actions performed, such as items added, removed, or moved.
-        - Useful for tracking activity.
-
-        ### 5.5 Manual
-        Access the in-app help documentation, which provides a summary of features and tips.
-
-        ### 5.6 About
-        Learn more about CALIS, including version information and credits.
-
-        ---
-
-        ## 6. Troubleshooting
-        ### Common Issues
-        - **App doesn't start**: Ensure Java is installed and properly configured.
-        - **Errors while managing lockers**: Verify the input values and try again.
-        - **Locker data not updating**: Restart the application.
-
-        If issues persist, refer to the Contact and Support section.
-
-        ---
-
-        ## 7. Contact and Support
-        For assistance or inquiries, reach out to the project team:
-        - **Email**: (To be edited)
-        - **Phone**: (To be editted)
-
-        Thank you for using CALIS! We hope it makes managing lockers easier and more efficient.
-        """);
-
-    // Add the text area to a scroll pane
-    JScrollPane scrollPane = new JScrollPane(manualText);
-    manualPanel.add(scrollPane, BorderLayout.CENTER);
-
-    // Add the manual panel to the ContentPanel
-    ContentPanel.add(manualPanel);
-
-    // Refresh the ContentPanel
-    ContentPanel.repaint();
-    ContentPanel.revalidate();
-
+        // Refresh the ContentPanel
+        ContentPanel.repaint();
+        ContentPanel.revalidate();
     }//GEN-LAST:event_ManualButtonActionPerformed
 
     
     
     private void AboutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AboutButtonActionPerformed
-       ContentPanel.removeAll();
-       ContentPanel.add(AboutPanel);
-       ContentPanel.repaint();
-       ContentPanel.revalidate();
+    ContentPanel.removeAll();
+    
+    // Initialize the AboutPanel if it hasn't been set up yet
+    initializeAboutPanel();
+    
+    ContentPanel.add(AboutPanel);
+    ContentPanel.repaint();
+    ContentPanel.revalidate();
     }//GEN-LAST:event_AboutButtonActionPerformed
+
+    private void initializeAboutPanel() {
+    AboutPanel.setLayout(new BorderLayout());
+    AboutPanel.setBackground(new Color(210, 220, 230));
+
+    // Header
+    JPanel headerPanel = new JPanel();
+    headerPanel.setBackground(new Color(166, 150, 130));
+    headerPanel.setPreferredSize(new Dimension(0, 50));
+    JLabel titleLabel = new JLabel("C.A.L.I.S.", SwingConstants.CENTER);
+    titleLabel.setFont(new Font("Arial", Font.BOLD, 20));
+    titleLabel.setForeground(Color.BLACK);
+    headerPanel.add(titleLabel);
+
+    // Main content
+    JPanel mainPanel = new JPanel();
+    mainPanel.setBackground(new Color(210, 220, 230));
+    mainPanel.setLayout(new BorderLayout());
+
+    JLabel aboutLabel = new JLabel("ABOUT US", SwingConstants.CENTER);
+    aboutLabel.setFont(new Font("Arial", Font.BOLD, 36));
+    aboutLabel.setForeground(Color.BLACK);
+    mainPanel.add(aboutLabel, BorderLayout.NORTH);
+
+    // Team Panel
+    JPanel teamPanel = new JPanel();
+    teamPanel.setBackground(new Color(210, 220, 230));
+    teamPanel.setLayout(new GridLayout(1, 4, 20, 0));
+
+    // Add members with relative paths
+    teamPanel.add(createMemberPanel("BRUTAS, JOHN ARIES", "src/ars.jpg"));
+    teamPanel.add(createMemberPanel("MORGA, CHRISTIAN", "src/tiano.JPG"));
+    teamPanel.add(createMemberPanel("NACARIO, CARL JOSEPH", "src/cj.jpg"));
+    teamPanel.add(createMemberPanel("TABALAN, VHON MICHAEL", "src/vhon.png"));
+
+    mainPanel.add(teamPanel, BorderLayout.CENTER);
+
+    // Add panels to AboutPanel
+    AboutPanel.add(headerPanel, BorderLayout.NORTH);
+    AboutPanel.add(mainPanel, BorderLayout.CENTER);
+}
+
+
+    // Function to create a panel for a team member
+    private JPanel createMemberPanel(String memberName, String imagePath) {
+        JPanel memberPanel = new JPanel();
+        memberPanel.setLayout(new BorderLayout());
+        memberPanel.setBackground(new Color(210, 220, 230));
+
+        // Member image
+        JLabel frameLabel = new JLabel();
+        frameLabel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
+        frameLabel.setHorizontalAlignment(SwingConstants.CENTER);
+
+        // Load the image
+        try {
+            ImageIcon imageIcon = new ImageIcon(getClass().getClassLoader().getResource(imagePath));
+            Image scaledImage = imageIcon.getImage().getScaledInstance(120, 100, Image.SCALE_SMOOTH);
+            frameLabel.setIcon(new ImageIcon(scaledImage));
+        } catch (Exception e) {
+            frameLabel.setText("Image not found");
+            frameLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        }
+
+        // Member name label
+        JLabel memberNameLabel = new JLabel(memberName, SwingConstants.CENTER);
+        memberNameLabel.setFont(new Font("Arial", Font.BOLD, 14));
+        memberNameLabel.setForeground(Color.BLACK);
+
+        // Add components to the member panel
+        memberPanel.add(frameLabel, BorderLayout.CENTER);
+        memberPanel.add(memberNameLabel, BorderLayout.SOUTH);
+
+        return memberPanel;
+    }
+
+
+
+    // Function to upload an image for a specific frame
+    private void uploadImage(JLabel frameLabel) {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("Image files", "jpg", "png", "jpeg"));
+
+        int result = fileChooser.showOpenDialog(null);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            ImageIcon imageIcon = new ImageIcon(selectedFile.getAbsolutePath());
+
+            // Resize the image to fit the frame
+            Image image = imageIcon.getImage().getScaledInstance(frameLabel.getWidth(), frameLabel.getHeight(), Image.SCALE_SMOOTH);
+            frameLabel.setIcon(new ImageIcon(image));
+        }
+    }
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
         CardLayout cardLayout = (CardLayout) Lockers.getLayout();
